@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>{{feed.title}}</title>
+
+        <link rel="stylesheet" href="/static/quotes.css" type="text/css" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed/quotes.rss" />
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <ul>
+            {{#each feed.posts_ref}}
+                <li class="post">
+                    <div class="citation"><span class="author"><a href="/author/{{this.author}}">{{this.author}}</a></span> &ndash; <span class="source">{{#if this.source_url}}<a href="{{this.source_url}}">{{this.source}}</a>{{else}}{{this.source}}{{/if}}</span> <span class="permalink"><a href="/quote/{{this.rowid}}">∞</a> <span class="date"><a href="/quote/{{this.rowid}}">{{this.date}}</a></span></div>
+                    <div class="text">{{format_post_text this.text}}</div>
+                </li>
+            {{/each}}
+        </ul>
+
+        {{#if feed.has_more}}<a class="previous" href="{{feed.previous_link}}">(more)</a>{{/if}}
+    </body>
+</html>

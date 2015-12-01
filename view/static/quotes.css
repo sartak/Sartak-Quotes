@@ -1,0 +1,86 @@
+body {
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 18px;
+    background: #EEE;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+form, ul, div.post {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+p, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.post .text {
+    padding-top: .5em;
+    padding-left: 1em;
+    margin-bottom: 3em;
+}
+
+.post .author {
+    font-weight: bold;
+}
+
+.post .source {
+    font-style: italic;
+}
+
+.post .author a,
+.post .source a,
+.post .date a {
+    text-decoration: none;
+    color: black;
+}
+
+.citation {
+    vertical-align: middle;
+}
+
+.post .date {
+    font-size: 10px;
+    float: right;
+    margin-right: 1em;
+}
+
+.post p + p {
+    margin-top: .5em;
+}
+
+.permalink a {
+    float: right;
+    font-size: 10px;
+    text-decoration: none;
+    color: #AAA;
+}
+
+.permalink a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+a.previous {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.authors a {
+    text-decoration: none;
+    color: #000;
+}
+
+.authors li {
+    margin-bottom: 0.5em;
+}

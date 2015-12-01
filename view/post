@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>{{post.text}}</title>
+
+        <link rel="stylesheet" href="/static/quotes.css" type="text/css" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed/quotes.rss" />
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="post">
+            <div class="citation"><span class="author"><a href="/author/{{post.author}}">{{post.author}}</a></span> &ndash; <span class="source">{{#if post.source_url}}<a href="{{post.source_url}}">{{post.source}}</a>{{else}}{{post.source}}{{/if}}</span> <span class="permalink"><a href="/quote/{{post.rowid}}">∞</a> <span class="date"><a href="/quote/{{post.rowid}}">{{post.date}}</a></span></div>
+            <div class="text">{{format_post_text post.text}}</div>
+        </div>
+    </body>
+</html>
+

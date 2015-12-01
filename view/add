@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>add quote</title>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="/static/quotes.css" type="text/css" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed/quotes.rss" />
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <form class="form-horizontal" method="POST" action="/add">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input name="password" type="text" id="password"></input>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="text">Text</label>
+                    <div class="controls">
+                        <textarea name="text" id="text" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="author">Author</label>
+                    <div class="controls">
+                        <input name="author" type="text" id="author"></input>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="source">Source</label>
+                    <div class="controls">
+                        <input name="source" type="text" id="source"></input>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="source_url">URL</label>
+                    <div class="controls">
+                        <input name="source_url" type="text" id="source_url"></input>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="date">Date</label>
+                    <div class="controls">
+                        <input name="date" type="text" id="date"></input>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-success"><i class="icon-plus-sign icon-white"></i> Add</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
